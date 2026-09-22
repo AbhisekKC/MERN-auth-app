@@ -28,7 +28,7 @@ function Signup() {
             return handleError('name, email and password are required!!!')
         }
         try {
-            const url = 'http://localhost:8000/auth/signup';
+            const url = 'https://mern-auth-app-api-nu.vercel.app/auth/signup';
             // Axios handles the JSON body stringification automatically
             const response = await axios.post(url, signupInfos);
 
