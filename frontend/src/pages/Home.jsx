@@ -40,7 +40,7 @@ function Home() {
     const token = localStorage.getItem('token');
 
     try {
-      const url ='http://localhost:8000/products'
+      const url ='https://mern-auth-app-api-nu.vercel.app/products'
 
       const response = await axios.get(url,{
         headers:{
